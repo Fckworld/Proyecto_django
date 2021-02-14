@@ -1,0 +1,1 @@
+Este es un bloc de notas abierto desde cmd (>>"notepade hola.txt")
