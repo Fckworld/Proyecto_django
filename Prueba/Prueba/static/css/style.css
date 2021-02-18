@@ -1,8 +1,19 @@
+html{
+    /*Ver si poner padding acá mantiene la página igual.*/
+    background-image: url(../img/background.png);
+    background-size:1080px 1800px;
+    background-repeat: no-repeat;
+    background-position:bottom
+}
 #foto-banner{
     z-index: -1;
-    width: 100%;
     padding: 0;
-
+    height: 200px;
+    width: 100%;
+    filter: blur(2px);
+}
+#contenedor-banner{
+    padding: 0;
 }
 #div-nav{
     padding: 0;
