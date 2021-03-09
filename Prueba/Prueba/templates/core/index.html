@@ -11,7 +11,32 @@
    <title>Ecopura Chile</title>
 </head>
 <header>
-    <h1>Este título se subió desde un MAC</h1>
+    <div  id ="carrusel" class="carousel slide carousel-fade position-absolute p-5" data-bs-ride="carousel"> <!--Inicialaizar script de inicio automático del carrusel-->
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <p class="h1 text-left">
+                    Bienvenidos a Ecopura
+                </p>
+                <p class="text-center">!Esta es una frase bonita!</p>
+            </div>
+            <div class="carousel-item "data-bs-interval="5000">
+                <p class="h1 text-left">¡Haz tu pedido de inmediato!</p>
+                <p class="text-left">
+                    Un solo clíck, y estaremos afuera de tu casa con tu pedido.
+                </p>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <p class="h1 text-left">¿Tienes alguna duda?</p>
+                <p class="text-left">¡Contáctate con nosotros!</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev position-relative" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon position-absolute start-0" aria-hidden="true"></span>
+        </button> 
+        <button class="carousel-control-next position-relative" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon position-absolute end-0" aria-hidden="true"></span>
+        </button>
+    </div>
 </header>
 <body>
     <img src="../../static/img/background.png" id="wallpaper">
