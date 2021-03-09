@@ -11,35 +11,54 @@
    <title>Ecopura Chile</title>
 </head>
 <header>
-    <div  id ="carrusel" class="carousel slide carousel-fade position-absolute p-5" data-bs-ride="carousel"> <!--Inicialaizar script de inicio automático del carrusel-->
-        <div class="carousel-inner">
+    <nav class="navbar navbar-expand-lg navbar-light position-relative" id="menu_exterior"> 
+        <div class="container-fluid position-absolute" id="menu">
+            <a href="" class="navbar-brand">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu_interior" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!--Botón celular-->
+                <span class="navbar-toggler-icon"></span> <!--Cambiar el nombre del target por el id de lo que abre-->
+              </button>
+              <div class="collapse navbar-collapse" id="menu_interior">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a href="" class="nav-link">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="" class="nav-link">Comprar</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="" class="nav-link">Contacto</a>
+                      </li>
+                  </ul>
+              </div>
+        </div>
+    </nav>
+    <div  id ="carrusel" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel"> <!--Inicialaizar script de inicio automático del carrusel-->
+        <div id="carrusel_interior"class="carousel-inner position-absolute">
             <div class="carousel-item active" data-bs-interval="5000">
-                <p class="h1 text-left">
+                <p class="h1 text-center">
                     Bienvenidos a Ecopura
                 </p>
                 <p class="text-center">!Esta es una frase bonita!</p>
             </div>
             <div class="carousel-item "data-bs-interval="5000">
-                <p class="h1 text-left">¡Haz tu pedido de inmediato!</p>
-                <p class="text-left">
+                <p class="h1 text-center">¡Haz tu pedido de inmediato!</p>
+                <p class="text-center">
                     Un solo clíck, y estaremos afuera de tu casa con tu pedido.
                 </p>
             </div>
-            <div class="carousel-item" data-bs-interval="5000">
-                <p class="h1 text-left">¿Tienes alguna duda?</p>
-                <p class="text-left">¡Contáctate con nosotros!</p>
+            <div class="carousel-item " data-bs-interval="5000">
+                <p class="h1 text-center">¿Tienes alguna duda?</p>
+                <p class="text-center">¡Contáctate con nosotros!</p>
             </div>
         </div>
-        <button class="carousel-control-prev position-relative" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon position-absolute start-0" aria-hidden="true"></span>
+        <button id="boton_izquierdo" class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
         </button> 
-        <button class="carousel-control-next position-relative" type="button" data-bs-target="#carrusel" data-bs-slide="next">
-            <span class="carousel-control-next-icon position-absolute end-0" aria-hidden="true"></span>
+        <button id="boton_derecho"class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
         </button>
     </div>
 </header>
 <body>
-    <img src="../../static/img/background.png" id="wallpaper">
+  <img src="../../static/img/background.png" id="wallpaper">
 </body>
 <script src="../../static/js/bootstrap.min.js"></script>
 <script src="../../static/js/popper.min.js"></script>

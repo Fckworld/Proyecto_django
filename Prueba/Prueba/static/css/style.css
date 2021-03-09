@@ -8,5 +8,33 @@
     max-width: 100%;
     height: auto;
     position: absolute;
-    z-index: -1;
+    z-index: -2;
 }
+#carrusel_interior{
+    margin-top: 10%;
+}
+
+#boton_izquierdo{
+    height: 500px;
+    width: 35%; 
+}
+
+#boton_derecho{
+    height: 500px;
+    width: 35%;
+}
+#menu{
+    height: 200px;
+}
+#menu_interior{
+    height: 200px;
+}
+#menu_exterior{
+    background:transparent;
+}
+@media only screen and (max-width: 950px){
+    #boton_izquierdo{
+        height: 200px;
+    }
+}
+
